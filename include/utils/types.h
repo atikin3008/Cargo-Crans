@@ -4,7 +4,7 @@
 #pragma once
 namespace Utils {
     typedef signed int time_t;
-    enum class Types {
+    enum class ShipTypes {
         BULK_SHIP,
         LIQUID_SHIP,
         CONTAINER_SHIP

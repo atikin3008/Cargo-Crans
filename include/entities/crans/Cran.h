@@ -10,10 +10,10 @@
 namespace Cran {
     class Cran {
     public:
-        Cran(Utils::Types type) : type_(type), ship_(nullptr), end_(0) {}
+        Cran(Utils::ShipTypes type) : type_(type), ship_(nullptr), end_(0) {}
 
     private:
-        Utils::Types type_;
+        Utils::ShipTypes type_;
         std::shared_ptr<Ship::Ship> ship_;
         Utils::time_t end_;
     };
