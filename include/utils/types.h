@@ -5,8 +5,8 @@
 namespace Utils {
     typedef signed int time_t;
     enum class ShipTypes {
-        BULK_SHIP,
-        LIQUID_SHIP,
-        CONTAINER_SHIP
+        BULK,
+        LIQUID,
+        CONTAINER
     };
 }
