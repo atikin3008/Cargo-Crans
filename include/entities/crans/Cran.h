@@ -7,8 +7,6 @@
 #include "../ships/Ship.h"
 #include<memory>
 
-#ifndef CARGO_CRANS_CRAN_H
-#define CARGO_CRANS_CRAN_H
 namespace Cran {
     class Cran {
     public:
@@ -20,4 +18,3 @@ namespace Cran {
         Utils::time_t end_;
     };
 }
-#endif //CARGO_CRANS_CRAN_H
