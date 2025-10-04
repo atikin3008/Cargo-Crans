@@ -12,6 +12,14 @@ namespace Cran {
     public:
         Cran(Utils::ShipTypes type) : type_(type), ship_(nullptr), end_(0) {}
 
+        bool isBusy();
+
+        void addShip(std::shared_ptr<Ship::Ship> ship) {
+            ship_ = ship;
+        };
+
+        Utils::ShipTypes get_type();
+
     private:
         Utils::ShipTypes type_;
         std::shared_ptr<Ship::Ship> ship_;
