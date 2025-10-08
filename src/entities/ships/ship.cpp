@@ -10,4 +10,16 @@ namespace Ship {
         , cargoWeight_(cargoWeight)
     {
     }
+
+    std::string Ship::getName() const {
+        return name_;
+    }
+
+    Utils::ShipTypes Ship::getType() const {
+        return type_;
+    }
+
+    Utils::weight_t Ship::getCargoWeight() const {
+        return cargoWeight_;
+    }
 }
