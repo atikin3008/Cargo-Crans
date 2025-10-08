@@ -86,8 +86,8 @@ fabric.properties
 
 .idea/*
 
-!.idea/codeStyles
-!.idea/runConfigurations
+.idea/codeStyles
+.idea/runConfigurations
 
 # End of https://www.toptal.com/developers/gitignore/api/clion+alli
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
@@ -95,11 +95,11 @@ fabric.properties
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
