@@ -4,7 +4,7 @@
 
 namespace Ship {
     class Ship{
-      public:
+     public:
         Ship(std::string name,
                    Utils::ShipTypes type,
                    Utils::weight_t cargoWeight);
@@ -12,7 +12,7 @@ namespace Ship {
         Utils::ShipTypes getType() const;
         Utils::weight_t getCargoWeight() const;
         void unload(Utils::weight_t cargoWeight);
-      private:
+     private:
         std::string name_;
         Utils::ShipTypes type_;
         Utils::weight_t cargoWeight_;
