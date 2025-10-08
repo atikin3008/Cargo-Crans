@@ -22,4 +22,11 @@ namespace Ship {
     Utils::weight_t Ship::getCargoWeight() const {
         return cargoWeight_;
     }
+
+    void Ship::unload(Utils::weight_t cargoWeight) {
+        if (cargoWeight > cargoWeight_) {
+            cargoWeight = cargoWeight_;
+        }
+        cargoWeight_ -= cargoWeight;
+    }
 }
