@@ -9,18 +9,16 @@
 
 namespace Cran {
     class Cran {
-    public:
+     public:
         Cran(Utils::ShipTypes type) : type_(type), ship_(nullptr), end_(0) {}
 
         bool isBusy();
 
-        void addShip(std::shared_ptr<Ship::Ship> ship) {
-            ship_ = ship;
-        };
+        void addShip(std::shared_ptr<Ship::Ship> ship) { ship_ = ship; }
 
         Utils::ShipTypes get_type();
 
-    private:
+     private:
         Utils::ShipTypes type_;
         std::shared_ptr<Ship::Ship> ship_;
         Utils::time_t end_;
