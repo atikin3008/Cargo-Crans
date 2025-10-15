@@ -28,6 +28,7 @@ namespace Shedule {
                 ans.erase(ans.begin() + i);
                 --i;
             }
+            return ans;
         }
 
     private:
