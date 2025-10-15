@@ -19,4 +19,4 @@ namespace Utils {
         std::shared_ptr<Ship::Ship> ship;
     };
 }
-
+//CARGO_AND_CRANS_TYPES_H
