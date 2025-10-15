@@ -12,11 +12,11 @@ namespace Cran {
      public:
         Cran(Utils::ShipTypes type) : type_(type), ship_(nullptr), end_(0) {}
 
-        bool isBusy();
+        bool isBusy(Utils::time_t time);
 
         void addShip(std::shared_ptr<Ship::Ship> ship) { ship_ = ship; }
 
-        Utils::ShipTypes get_type();
+        Utils::ShipTypes get_type() { return type_; }
 
      private:
         Utils::ShipTypes type_;

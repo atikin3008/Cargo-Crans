@@ -24,7 +24,7 @@ namespace Cran {
 
         void addShip(std::shared_ptr<Ship::Ship> ship) { ships_.push_back(ship); }
 
-        void update();
+        void update(Utils::time_t);
 
         Utils::ShipTypes getType() { return type_; }
 
