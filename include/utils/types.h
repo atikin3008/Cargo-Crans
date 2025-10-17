@@ -3,6 +3,10 @@
 #include "../entities/ships/Ship.h"
 #include <memory>
 
+namespace Ship {
+    class Ship;
+}
+
 namespace Utils {
     typedef signed int time_t;
     typedef signed int weight_t;
