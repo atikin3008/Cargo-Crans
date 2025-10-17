@@ -11,7 +11,7 @@ namespace Cran {
 
         bool isBusy(Utils::time_t time);
 
-        void addShip(std::shared_ptr<Ship::Ship> ship) { ship_ = ship; }
+        void setShip(std::shared_ptr<Ship::Ship> ship) { ship_ = ship; }
 
         Utils::ShipTypes get_type() { return type_; }
     private:

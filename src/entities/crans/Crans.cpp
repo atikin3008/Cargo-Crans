@@ -7,7 +7,7 @@ namespace Cran {
             inCran = false;
             for (auto &it: crans_) {
                 if (!it->isBusy(time)){
-                    it->addShip(ships_.front());
+                    it->setShip(ships_.front());
                     inCran = false;
                 }
             }
