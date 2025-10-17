@@ -18,4 +18,9 @@ namespace Ship {
         Utils::ShipTypes type_;
         Utils::weight_t cargoWeight_;
     };
+
+    struct ScheduleShip {
+        time_t end;
+        std::shared_ptr<Ship> ship;
+    };
 }

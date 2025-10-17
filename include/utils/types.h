@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../entities/ships/Ship.h"
 #include <memory>
 
 namespace Utils {
@@ -10,10 +9,5 @@ namespace Utils {
         BULK,
         LIQUID,
         CONTAINER
-    };
-
-    struct ScheduleShip {
-        time_t end;
-        std::shared_ptr<Ship::Ship> ship;
     };
 }
