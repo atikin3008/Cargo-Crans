@@ -1,6 +1,3 @@
-//
-// Created by Никита Комков on 04.10.2025.
-//
 #include"../../../include/entities/crans/Port.h"
 
 namespace Cran {
