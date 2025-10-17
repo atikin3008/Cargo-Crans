@@ -2,6 +2,7 @@
 
 #include<vector>
 #include<memory>
+#include<queue>
 #include "Cran.h"
 #include "../../utils/types.h"
 #include "../../exceptions/Exceptions.h"
@@ -12,7 +13,7 @@ namespace Cran {
     public:
         Crans(Utils::ShipTypes type, const std::vector<std::shared_ptr<Cran>> &crans);
 
-        void addShip(std::shared_ptr<Ship::Ship> ship) { ships_.push_back(ship); }
+        void addShip(std::shared_ptr<Ship::Ship> ship) { ships_.push(ship); }
 
         void update(Utils::time_t);
 
@@ -21,6 +22,6 @@ namespace Cran {
     private:
         Utils::ShipTypes type_;
         std::vector<std::shared_ptr<Cran>> crans_;
-        std::vector<std::shared_ptr<Ship::Ship>> ships_;
+        std::queue<std::shared_ptr<Ship::Ship>> ships_;
     };
 }
