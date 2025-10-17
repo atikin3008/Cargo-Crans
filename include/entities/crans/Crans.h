@@ -1,9 +1,4 @@
-//
-// Created by Никита Комков on 04.10.2025.
-//
-
-#ifndef CARGO_AND_CRANS_CRANS_H
-#define CARGO_AND_CRANS_CRANS_H
+#pragma once
 
 #include<vector>
 #include<memory>
@@ -34,4 +29,3 @@ namespace Cran {
         std::vector<std::shared_ptr<Ship::Ship>> ships_;
     };
 }
-#endif //CARGO_AND_CRANS_CRANS_H

@@ -1,6 +1,3 @@
-//
-// Created by Никита Комков on 03.10.2025.
-//
 #pragma once
 
 #include "../entities/ships/Ship.h"

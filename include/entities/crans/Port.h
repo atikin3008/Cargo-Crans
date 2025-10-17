@@ -1,9 +1,4 @@
-//
-// Created by Никита Комков on 04.10.2025.
-//
-
-#ifndef CARGO_AND_CRANS_PORT_H
-#define CARGO_AND_CRANS_PORT_H
+#pragma once
 
 #include<memory>
 #include "Crans.h"
@@ -19,4 +14,3 @@ namespace Cran {
         std::vector<std::shared_ptr<Crans>> crans_;
     };
 }
-#endif //CARGO_AND_CRANS_PORT_H

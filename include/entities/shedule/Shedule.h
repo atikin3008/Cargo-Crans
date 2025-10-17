@@ -1,9 +1,4 @@
-//
-// Created by Никита Комков on 05.10.2025.
-//
-
-#ifndef CARGO_AND_CRANS_SHEDULE_H
-#define CARGO_AND_CRANS_SHEDULE_H
+#pragma once
 
 #include<algorithm>
 #include<vector>
@@ -35,4 +30,3 @@ namespace Shedule {
         std::vector<std::pair<Utils::time_t, std::shared_ptr<Ship::Ship>>> queue;
     };
 }
-#endif //CARGO_AND_CRANS_SHEDULE_H
