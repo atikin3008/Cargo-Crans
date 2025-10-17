@@ -10,12 +10,7 @@
 namespace Cran {
     class Crans {
     public:
-        Crans(Utils::ShipTypes type, const std::vector<std::shared_ptr<Cran>> &crans) : type_(type), crans_(crans) {
-            for (auto &it: crans_)
-                if (it->get_type() != type) {
-                    throw ErrorCrans("Different types of crans on intialize");
-                }
-        }
+        Crans(Utils::ShipTypes type, const std::vector<std::shared_ptr<Cran>> &crans);
 
         void addShip(std::shared_ptr<Ship::Ship> ship) { ships_.push_back(ship); }
 

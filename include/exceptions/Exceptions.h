@@ -11,7 +11,7 @@
 class ErrorCrans : public std::exception {
 public:
     ErrorCrans(std::string error) : error_(error) {}
-    std::string getError(){
+    std::string what(){
         return error_;
     }
 
