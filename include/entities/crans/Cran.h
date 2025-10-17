@@ -17,14 +17,8 @@ namespace Cran {
         void addShip(std::shared_ptr<Ship::Ship> ship) { ship_ = ship; }
 
         Utils::ShipTypes get_type() { return type_; }
-
-     private:
-        Utils::ShipTypes type_;
-    public:
-        Cran(Utils::Types type) : type_(type), ship_(nullptr), end_(0) {}
-
     private:
-        Utils::Types type_;
+        Utils::ShipTypes type_;
         std::shared_ptr<Ship::Ship> ship_;
         Utils::time_t end_;
     };
